@@ -7,6 +7,6 @@ $file=fopen("form-save.txt", "a");
     fwrite($file,"name :");
     fwrite($file, $name ."\n");
     fwrite($file,"password :");
-    fwrite($file, $password ."\n");
+    fwrite($file, $pass ."\n");
     fclose($file);
  ?>
