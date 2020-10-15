@@ -1,9 +1,11 @@
 <?php
-    extract($_REQUEST);
-    $file=fopen("form-save.txt","a");
-
+$name=$_POST["name"];
+$pass=$_POST["password"]
+?>
+<?php
+$file=fopen("form-save.txt", "a");
     fwrite($file,"name :");
-    fwrite($file, $username ."\n");
+    fwrite($file, $name ."\n");
     fwrite($file,"password :");
     fwrite($file, $password ."\n");
     fclose($file);
