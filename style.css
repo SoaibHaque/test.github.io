@@ -13,8 +13,27 @@ div {
   text-align: center;
 }
 
-div p {
+.top {
+  display: grid;
+  grid-template-rows: repeat(1);
+  grid-template-columns: 11% auto;
+  font-size: 14px;
+}
+
+.top-info1 {
   text-align: left;
+  grid-column: 1/2;
+}
+
+.top-info2 {
+  text-align: left;
+  grid-column: 2/3;
+  font-size: 97.5%;
+  line-height: 250%;
+  background-color: #fffbe2;
+  color: #3b5998;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  font-family: Roboto, 'Droid Sans', Helvetica, sans-serif;
 }
 
 form input {
@@ -81,10 +100,9 @@ h2 {
   color: #576b95;
 }
 
-.form {
-  margin: 3%;
-}
-
+/* .form {
+  margin: 0%;
+} */
 .create {
   border: 0;
   padding: 2.5%;
@@ -105,12 +123,49 @@ a {
   font-size: 14px;
 }
 
-main{
-  display: grid;
-  grid-template-rows: repeat(1);
-  grid-template-columns: repeat(2);
-
+span {
+  font-weight: bold;
+  color: #90949c;
 }
-main .lang{
-    font-size: 12px;
+
+main {
+  text-align: center;
+  color: #576b95;
+  margin: 15% 2% auto 2%;
+  display: grid;
+  grid-template-rows: repeat(1, 49%);
+  grid-template-columns: repeat(2);
+}
+
+main .lang1, .lang2 {
+  font-size: 75%;
+}
+
+.lang1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.lang2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.about p, .inc p {
+  text-align: center;
+}
+
+.about {
+  font-size: 10px;
+  text-align: center;
+  color: #8a8d91;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.inc {
+  color: gray;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
 }
